@@ -1,5 +1,5 @@
 import streamlit as st
-from fact_checker import check_fact
+from Fact_Check import check_fact
 from openai import OpenAI
 
 # Set up OpenAI GPT-4 API key (this should be kept secret, and you should consider using Streamlit's Secrets Management for production)
