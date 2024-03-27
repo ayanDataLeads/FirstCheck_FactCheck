@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 from Fact_Check import check_fact
 from openai import OpenAI
 
