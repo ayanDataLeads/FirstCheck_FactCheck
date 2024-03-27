@@ -1,9 +1,5 @@
 from openai import OpenAI
 
-client = OpenAI(
-            api_key=os.environ.get("OPEN_AI_API_KEY")
-        )
-
 # Define the fact-checking function
 def check_fact(text, client):
     prompt = text + "\nbased on the above message, give a fact-checking response in one paragraph.\
