@@ -4,8 +4,8 @@ from openai import OpenAI
 
 # Set up OpenAI GPT-4 API key (this should be kept secret, and you should consider using Streamlit's Secrets Management for production)
 client = OpenAI(
-    api_key='sk-your_secret_key_here'  # Replace with your secret key
-)
+            api_key=os.environ.get("OPEN_AI_API_KEY")
+        )
 
 st.title("Welcome to Dr. Eagle's Fact Checking Service")
 
